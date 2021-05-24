@@ -5,6 +5,9 @@ import logging
 LOG_FORMAT = "%(asctime)s - %(levelname)s - %(message)s" 
 logging.basicConfig(level=logging.INFO, format=LOG_FORMAT) 
 logger = logging.getLogger(__file__)
+# file handler
+
+
 import numpy as np
 import pandas as pd
 
