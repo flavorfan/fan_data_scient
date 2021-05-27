@@ -66,7 +66,40 @@
 ## **7. 相关文献**
 * Cheng, Heng-Tze, et al. "Wide & deep learning for recommender systems." Proceedings of the 1st workshop on deep learning for recommender systems. 2016.
 
-   
+## **8. ToDo **
+### Log
+* file handler & console string handler
+* logname: xxx_{datetime}.log
+* print to 
+### tensorboard
+
+###  Understand programe struct
+
+## **9. Idear from pub **
+
+### 算法：
+lgb ？？
+cbt
+gnn
+
+huggingface 的 transformers
+
+直接用 [userid, feedid, features..] naive 建模，效果没有deepdfm好
+图像文字信息都没有加
+
+问下，官方baseline里面在线训练啥意思
+离线是13号验证集，14号测试集
+在线是14号验证集，线上提交测试集
+
+
+### 特征
+100特征
+类别特征
+
+## 问题
+线下？ 线上？
 
 
 
+## baseline2
+https://github.com/dpoqb/wechat_big_data_baseline_pytorch
