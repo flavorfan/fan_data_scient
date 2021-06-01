@@ -11,6 +11,8 @@ __pycache__/
 
 .idea/
 tmp/
+wide-and-deep/Final_Project_MachineLearning_in_TensorFlow_Berkeley/datasets
+wide-and-deep/Final_Project_MachineLearning_in_TensorFlow_Berkeley/documents
 data/
 build/
 develop-eggs/
