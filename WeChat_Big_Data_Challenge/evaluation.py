@@ -181,6 +181,15 @@ def score(result_data, label_data, mode="初赛"):
 if __name__ == '__main__':
     t = time.time()
     label_data = open('data/evaluate/evaluate_all_13_generate_sample.csv', 'r')
-    result_data = open('data/evaluate/submit_1619332123.csv', 'r')
+    # result_data = open('data/evaluate/submit_1619332123.csv', 'r')
+    result_data = open('data/evaluate/submit_1623914333.csv', 'r')
     res = score(result_data, label_data, mode='初赛')
+
+    # weighted uAUC
+    weight_dict = {"read_comment": 4, "like": 3, "click_avatar": 2, "favorite": 1, "forward": 1,
+                   "comment": 1, "follow": 1}
+    weight_auc = compute_weighted_score(res['data']['score_detail'], weight_dict)
+    print("Weighted uAUC: ", weight_auc)
+
+
     print('Time cost: %.2f s'%(time.time()-t))
